@@ -486,6 +486,9 @@ body.modal-open {
     width: 100%; 
   }
 }
+.bg-boxcolor{
+	background:#F6F7F9;
+}
 /*--------- slick slider dot style start -------*/
 .slick-dot-style ul.slick-dots {
     bottom: -40px;
@@ -746,7 +749,6 @@ body.modal-open {
 .ibz-header-top-area .header-top-right ul li {
     margin-left: 30px;
 	padding:5px;
-	background:#A0CC00;
 }
 
 @media only screen and (max-width: 479px) {
@@ -7026,4 +7028,135 @@ h4.clrchg {
     line-height: 27px;
     margin: 0;
 }
+@media only screen and (max-width: 767px) and (max-width: 575px) {
+    .serviceBox {
+	margin-bottom:20px;
+    }
+}
 
+/*--- About us serviceBox ---- */
+
+.about-demo{ background: ; }
+.about-serviceBox{
+    padding: 50px 35px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-bottom-color: #428ef8;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.about-serviceBox:hover{ border: 1px solid #428ef8; }
+.about-serviceBox:before,
+.about-serviceBox:after{
+    content: "";
+    width: 70%;
+    height: 5px;
+    background: #428ef8;
+    opacity: 0;
+    position: absolute;
+    top: -3px;
+    left: 35%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease 0s;
+}
+.about-serviceBox:hover:before,
+.about-serviceBox:hover:after{
+    opacity: 1;
+    left: 50%;
+}
+.about-serviceBox:after{
+    top: auto;
+    bottom: -3px;
+}
+.about-serviceBox .about-service-icon{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #428ef8;
+    margin: 0 auto 20px;
+    font-size: 36px;
+    color: #fff;
+}
+.about-serviceBox .about-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #252525;
+    margin: 0 0 10px 0;
+    transition: all 0.5s ease 0s;
+}
+.about-serviceBox:hover .about-title{ opacity: 0; }
+.about-serviceBox .about-description{
+    font-size: 14px;
+    color: #7a7a7a;
+    line-height: 25px;
+    margin: 0;
+    transition: all 0.5s ease 0s;
+}
+.about-serviceBox:hover .about-description{
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width:990px){
+    .about-serviceBox{ margin-bottom: 30px; }
+}
+
+
+
+
+
+
+
+
+
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;	
+    margin-bottom: 10px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    text-align: left;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background: #F6F7F9;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#accordion .panel-title a:hover{
+    background: #d9d9d9;
+}
+
+#accordion .panel-body{
+    background: #167ea0;
+    padding: 0 0 0 40px;
+    border: none;
+    position: relative;
+}
+#accordion .panel-body p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    background: #3296b7;
+    padding: 30px;
+    margin: 0;
+}
+#accordion .panel-collapse .panel-body p{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease-in-out 0s;
+}
+#accordion .panel-collapse.in .panel-body p{
+    opacity: 1;
+    transform: scale(1);
+}
