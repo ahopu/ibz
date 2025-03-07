@@ -1,1 +1,1 @@
-International Business Zone - ibzstore.com
+International Business Zone - ibz
